@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
           Additional Notes: ${notes}
         `;
     
-        window.location.href = `mailto:flaminthaiemail@example.com?subject=${encodeURIComponent(
+        window.location.href = `mailto:flaminthai@gmail.com?subject=${encodeURIComponent(
           subject
         )}&body=${encodeURIComponent(body)}`;
       }
