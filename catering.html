@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flamin' Thai Catering</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <!-- Header Section -->
+      <header>
+        <div class="hamburger" aria-label="Toggle Navigation">☰</div>
+        <div class="logo-title-container">
+          <img
+            src="images/Flamin' Thai Logo.png"
+            alt="Flamin' Thai Logo"
+            class="logo"
+          />
+          <h1><a href="index.html">Flamin' Thai Northeast</a></h1>
+        </div>
+        <nav id="main-nav">
+          <a href="index.html" aria-label="Home">Home</a>
+          <a href="index.html#about" aria-label="About">About</a>
+          <a href="menu.html" aria-label="Menu">Menu</a>
+          <a href="catering.html" aria-label="Catering">Catering</a>
+          <a href="index.html#reservations" aria-label="Order">Order</a>
+          <a href="index.html#contacts" aria-label="Contacts">Contacts</a>
+        </nav>
+      </header>
+
+      <!-- Catering Page Content -->
+
+      <main>
+        <div class="form-container">
+          <h2>Catering Request Form</h2>
+          <form id="catering-form">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="event-type">Event Type:</label>
+              <select id="event-type" name="event-type" required>
+                <option value="">Select an event type</option>
+                <option value="birthday">Birthday</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+              </select>
+            </div>
+  
+            <div class="form-group">
+              <label for="date">Event Date:</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="guests">Number of Guests:</label>
+              <input type="number" id="guests" name="guests" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="notes">Additional Notes:</label>
+              <textarea id="notes" name="notes" placeholder="Special requests or details"></textarea>
+            </div>
+  
+            <div class="form-submit">
+              <button type="button" onclick="sendEmail()">Submit Request</button>
+            </div>
+          </form>
+        </div>
+      </main>
+  
+
+      <!-- Footer Section -->
+      <footer>
+        <p id="social-heading" class="center">Follow Us on Social Media</p>
+        <ul class="center" id="social">
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/FlaminThaiMN/"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/flaminthaimn"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+
+        <p class="center">&copy; 2024 Flamin' Thai. All rights reserved.</p>
+        <p class="center">Designed by Hai Nguyen</p>
+      </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script defer src="main.js"></script>
+  </body>
+</html>

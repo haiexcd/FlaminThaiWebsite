@@ -1,0 +1,710 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap");
+
+/* Base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+
+body {
+  background-color: black; /* Light beige background for a warm restaurant feel */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  margin-top: 4.375rem;
+  padding: 0 1rem;
+  background-color: #C39D65; /* Darker orange for a rich, welcoming header */
+}
+
+header .logo {
+  height: 5rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+header .logo-title-container {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 1.875rem;
+  margin: 0;
+  color: #ffffff; /* White text for contrast */
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header h1 a:hover {
+  color: #fac329; /* Light orange hover color */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 2.5rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #fac329;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+/* Split Main Section */
+.split-main-section {
+  display: flex;
+  width: 100%;
+}
+
+.left-half,
+.right-half {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.store-info {
+  background-color: black;
+  padding: 2rem;
+}
+
+.store-info h2 {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 1.75rem;
+  color: #C39D65;
+  margin-bottom: 1rem;
+}
+
+.store-info p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.order-button,
+.catering-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #C39D65;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover,
+.catering-button:hover {
+  background-color: #fac329;
+}
+
+
+
+/* Main Image Section */
+.bg-full-image {
+  width: 100%;
+}
+
+.bg-full-image img {
+  display: block;
+  width: 100%;
+  border: 1px solid #b4b4b4;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Typography */
+h2 {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 2.25rem;
+  color: #C39D65; /* Darker orange for headings */
+}
+
+h3 {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #C39D65;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+}
+
+.center {
+  text-align: center;
+}
+
+em {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  display: block;
+  color: #ffffff;
+}
+
+/* Layouts and Containers */
+#content {
+  padding-top: 3.75rem;
+  min-height: 25rem;
+  width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+}
+
+hr {
+  height: 0.125rem;
+  background-color: #d4d4d4;
+  border: none;
+  margin: 3.45rem auto 6.25rem auto;
+  position: relative;
+  width: calc(100% + 2rem);
+  left: -1rem;
+}
+
+/* Store Hours */
+.store-hours {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #C39D65; /* Primary color background */
+  border-left: 5px solid #C39D65; /* Secondary color border */
+  border-right: 5px solid #C39D65;
+  font-size: 1.125rem;
+  color: #3b3b3b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.store-hours p {
+  margin: 0.25rem 0;
+  font-weight: bold;
+}
+
+.store-hours p:first-of-type {
+  font-size: 1.25rem;
+  color: #C39D65; /* Darker orange for the "Store Hours:" text */
+}
+
+/* About and Product Sections */
+#about-section,
+#menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3.45rem;
+}
+
+.half-width {
+  flex-basis: calc(50% - 0.5rem);
+  margin-bottom: 1.25rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.half-width img {
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.half-width img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu Section */
+#reservation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  gap: 1rem;
+  margin-bottom: 3.45rem;
+}
+
+.reservation-item {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.reservation-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.reservation-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Calendar Section */
+
+.wrapperCalender {
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+    background-color: #ffffff;
+  }
+
+#calendar {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .event-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: none;
+  }
+
+  .event-details p {
+    color: #3b3b3b;
+  }
+
+
+/* Menu Page */  
+.menu-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem; /* Add space between menu items */
+  }
+  
+  .menu-item h4 {
+    margin: 0;
+    color: #C39D65; /* Gold color for item names */
+    font-size: 0.85rem;
+  }
+  
+  .menu-item p {
+    margin: 0.5rem 0 0;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .menu-item .price {
+    color: #C39D65; /* Gold color for price */
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+
+/* Responsive Grid for Mobile */
+@media (max-width: 768px) {
+  #menu-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile view */
+  }
+
+  .split-main-section {
+    flex-direction: column;
+  }
+
+  .left-half,
+  .right-half {
+    flex-basis: 100%;
+  }
+}
+
+/* Calendar Section */
+#calendar {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.event-details {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  display: none;
+}
+
+/* Reservations Section */
+.reservation-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #C39D65; /* Secondary color background */
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-button:hover {
+  background-color: #C39D65; /* Primary color hover */
+}
+
+.reservation-text {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.reservation-logo {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #C39D65; /* Secondary color */
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Contact List */
+ol {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #ffffff; /* Tertiary color */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125rem;
+}
+
+ol li a:hover {
+  color: #C39D65;
+}
+
+/* Google Maps Section */
+.map-container {
+  width: 100%;
+  /* max-width: 600px; */
+  /* margin: 2rem auto; */
+  /* border: 1px solid #d4d4d4; */
+  padding: 0;
+}
+
+.map-container h2 {
+  font-family: "Gaegu", sans-serif;
+  font-size: 2.5rem;
+  color: #C39D65;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Footer Section */
+footer {
+  width: 100%;
+  background-color: #C39D65; /* Tertiary color */
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+footer a:hover {
+  color: #C39D65;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0.25rem 0;
+}
+
+#social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 1rem auto;
+}
+
+#social li {
+  padding: 0.75rem;
+}
+
+#social-heading {
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Catering Form Section */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-container h2 {
+    color: #C39D65;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #2a2a2a;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .form-submit button {
+    width: 100%;
+    padding: 10px;
+    background-color: #C39D65;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-submit button:hover {
+    background-color: #fac329;
+  }
+  
+
+/* Reviews Section */
+#reviews {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: black;
+    color: #C39D65;
+  }
+  
+  .reviews-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .review {
+    flex: 0 0 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .review-text {
+    font-size: 1.125rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .reviewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .reviewer-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stars {
+    font-size: 1.25rem;
+    color: #C39D65;
+  }
+  
+  .reviews-navigation {
+    margin-top: 1rem;
+  }
+  
+  .nav-button {
+    background: #C39D65;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+  }
+  
+  .nav-button:hover {
+    background: #fac329;
+  }
+
+  .reviews-container .review {
+    display: none; /* Hide all reviews initially */
+  }
+  
+  .reviews-container .review:first-child {
+    display: block; /* Show the first review */
+  }
+  
+  
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .wrapperCalender {
+    width: 90%;
+  }
+
+  header {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  header h1,
+  header h3,
+  nav a {
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  nav a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #f1f1f1;
+    color: #fac329;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background-color: #f8f8f8;
+    color: #C39D65;
+  }
+
+  p,
+  em {
+    font-size: 0.875rem;
+  }
+
+
+  #about-section,
+  #menu-section {
+    flex-direction: column;
+  }
+}
