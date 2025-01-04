@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         events: [
           {
             title: "Chef's Special Tasting",
-            start: "2024-12-28T18:00:00",
-            end: "2024-12-28T20:00:00",
+            start: "2025-01-28T18:00:00",
+            end: "2025-01-28T20:00:00",
             description:
               "Experience an exclusive tasting event featuring special dishes crafted by our head chef.",
           },
