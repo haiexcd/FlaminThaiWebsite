@@ -346,6 +346,28 @@ hr {
   }
   
 
+
+/* Social Icons in Store Info */
+.store-info .social-icons {
+  display: flex;
+  justify-content: flex-start; /* Align icons with text on desktop */
+  gap: 2rem; /* Add more space between icons */
+  margin-top: 1rem;
+  padding-left: 0.5rem; /* Adjust alignment with the text */
+}
+
+.store-info .social-icons a {
+  color: #C39D65;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.store-info .social-icons a:hover {
+  color: #fac329;
+}
+
+
+
 /* Responsive Grid for Mobile */
 @media (max-width: 768px) {
   #menu-grid {
@@ -707,4 +729,9 @@ footer p {
   #menu-section {
     flex-direction: column;
   }
+
+  .store-info .social-icons {
+    justify-content: center; /* Center icons in mobile view */
+    gap: 1.5rem; /* Reduce gap slightly for better spacing */
+}
 }
